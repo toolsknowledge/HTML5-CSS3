@@ -1,0 +1,79 @@
+
+    - Hyper Text Markup Language
+
+    - HTML, used to create the static "web pages"
+
+    - Current Version of HTML is HTML5.3
+
+    - HTML5.0 released in 2018.
+
+    - HTML5.0 Success in market because of "API'S"
+
+API'S
+*****
+
+1) Storages API
+
+        => Local Storage
+
+        => Session Storage
+
+2) Web Worker API
+
+3) Web Socket API
+
+4) Maps API
+
+5) Web SQL
+
+6) canvas api
+
+7) svg api
+
+Schemantic Elements
+*******************
+    - HTML5.X provides more meaningful tags.
+
+    - These meaningful tags called as Schemantic Elements.
+
+Ex.
+    <header></header>
+
+    <aside></aside>
+
+    <main></main>
+
+    <footer></footer>
+
+    <section></section>
+
+    <article></article>
+
+    <nav></nav>
+
+    <audio></audio>
+
+    <video></video>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

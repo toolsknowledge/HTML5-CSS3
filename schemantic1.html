@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schematic Elements</title>
+        <style>
+            section{
+                display: grid;
+                grid-template-areas: "a"
+                                     "b"
+                                     "c";
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 8fr 1fr;
+                height: 100vh;
+            }  
+            header{
+                grid-area: "a";
+                background-color: #203040;
+                color: white;
+                text-align: center;
+            } 
+            main{
+                grid-area: "b";
+                text-align: center;
+                margin-top: 200px;
+            }
+            footer{
+                grid-area: "c";
+                background-color: #203049;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <header>
+                AshokIT
+            </header>
+            <main>
+                main content soon...!
+            </main>
+            <footer>
+                copyright@ashokit.in
+            </footer>
+        </section>
+    </body>
+</html>
