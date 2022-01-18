@@ -1,11 +1,113 @@
 <!--
-    HTML5 Supports two types of storages
+   HTML5 Supports two types of Storages.
 
-    1) local storage
+   1) local storage
 
-    2) session storage
+   2) session storage
 
-    if i close the browser data won't be lost, then such kind of storahe we can call local stoarge
+   even if we close the browser/opens the new data, data never loose. then such type of storage called as local storage
 
-    if i close the browser/opens the new tab, data will be lost, then such kind of storage called as session storage
+   when ever we close the browser/opens the new tab, we will loose the data from session storage
+
+
+   localStorage is the predefined object provided by javascript
+
+   localStorage object used to work with the local storage
+
+   sessionStorage is the predefined object provided by javascript
+
+   sessionStorage object used to work with the sessionStorage
+
+
+functions
+*********
+1) setItem(-,-)
+
+    used to store the data 
+
+
+2) getItem(-)
+
+   read the data
+   
+   
+3) removeItem(-)
+
+   delete the data 
 -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Storages</title>
+    </head>
+
+    <body>
+        <fieldset style="width: 25%;">
+            <legend>Login</legend>
+            <label>UNAME</label>
+            <input type="text" id="uname">
+
+            <br><br>
+            <label>UPWD</label>
+            <input type="password" id="upwd">
+
+            <br><br>
+            <button onclick="myFun()">Login</button>
+        </fieldset>
+    </body>
+
+    <script>
+        function myFun(){
+            let obj = {
+                "uname":document.getElementById("uname").value,
+                "upwd":document.getElementById("upwd").value
+            }
+            //storing the data
+            //window.localStorage.setItem("login_details",JSON.stringify(obj));
+            window.sessionStorage.setItem("login_details",JSON.stringify(obj));
+
+
+
+            //read the data
+            //console.log( window.localStorage.getItem("login_details") );
+            console.log( window.sessionStorage.getItem("login_details") );
+
+
+            //remove the data 
+            //window.localStorage.removeItem("login_details");
+            //window.sessionStorage.removeItem("login_details");
+            
+        }
+    </script>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
