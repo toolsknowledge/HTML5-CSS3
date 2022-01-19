@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Maps</title>
+    </head>
+
+    <body>
+        <p id="my_paragraphs">Location</p>
+        <button onclick="myFun()">Show Positions</button>
+    </body>
+
+   
+
+
+
+    <script>
+        function myFun(){
+           if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(function fun_one(res){
+                    document.getElementById("my_paragraphs").innerHTML = res.coords.latitude+"...."+res.coords.longitude;
+                }, function fun_two(err){
+                    switch(err.code){
+                        case err.PERMISSION_DENIED:
+                            document.getElementById("my_paragraphs").innerHTML = "Permission Denied";
+                            break;
+                        case err.POSITION_UNAVAILABLE:
+                            document.getElementById("my_paragraphs").innerHTML = "Position Unavailable";
+                            break;
+                        case err.TIMEOUT:
+                            document.getElementById("my_paragraphs").innerHTML = "Time Out !!!";
+                            break;
+
+                        case err.UNKNOWN_ERROR:
+                            document.getElementById("my_paragraphs").innerHTML = "Unknown Error";
+                            break;
+
+                        default:
+                    }
+                });
+           }else{
+               console.log("your browser not supporting google maps");
+           }
+        }
+
+
+      
+
+    </script>
+</html>
