@@ -1,0 +1,19 @@
+<script>
+    if(window.Worker){
+        let addThread = new Worker("add.js");
+        let subThread = new Worker("sub.js");
+        let mulThread = new Worker("mul.js");
+        addThread.postMessage({num1:10,num2:20});
+        addThread.onmessage = function(event){
+            subThread.postMessage({num1:event.data,num2:20});
+            subThread.onmessage = function(event){
+                mulThread.postMessage({num1:event.data,num2:10});
+                mulThread.onmessage = function(event){
+                    console.log(event.data);
+                }
+            }
+        }
+    }else{
+        console.log("browser not supporting web worker api");
+    }
+</script>
