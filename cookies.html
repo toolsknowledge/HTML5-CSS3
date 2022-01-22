@@ -1,0 +1,46 @@
+<!--
+    cookies
+    *******
+        key & value pairs in browser storage called as cookies
+
+        cookies are not safe
+
+    1) document.cookie = "key=value"
+            it is used to store the cookies
+
+    2) document.cookie
+            read the cookies
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookies</title>
+        <script>
+            function fun_one(){
+                document.cookie = "key1=Hello_1";
+                var d = new Date();
+                d.setTime(d.getTime()+30000);
+                document.cookie = "key2=Hello2;expires="+d.toUTCString();
+            }   
+            
+            function fun_two(){
+                console.log( document.cookie );
+            }
+
+            function fun_three(){
+                document.cookie = "key1=";
+            }
+        </script>
+    </head>  
+    <body>
+        <button onclick="fun_one()">Set Cookie</button>   
+        <button onclick="fun_two()">Get Cookies</button>  
+        <button onclick="fun_three()">Clear Cookie</button>   
+    </body>  
+</html>
+
+
+
+
