@@ -1,0 +1,17 @@
+<div id="my_div"></div>
+
+<script>
+    let socket = new WebSocket("ws://localhost:8080");
+
+    socket.onopen = function(){
+        socket.send("Welcome_1");
+    }
+
+    socket.onmessage = function(msg){
+        document.getElementById("my_div").innerHTML += msg.data+"<br>";
+    }
+
+    socket.onerror = function(err){
+        console.log(err);
+    }
+</script>
