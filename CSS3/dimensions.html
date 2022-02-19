@@ -1,0 +1,75 @@
+<!--
+    1) px
+
+    2) %
+
+    3) vw   & vh
+
+    4) em
+
+    5) rem
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dimensions</title>
+        <style>
+            .box{
+                margin-bottom: 10px;
+                background-color: green;
+                color: white;
+            }
+
+            .pixel-class{
+                width: 100px;
+            }
+
+            .percent-class{
+                width: 50%;
+            }
+
+            .parent{
+                width: 135px;
+                border: 1px solid red;
+                padding: 2px;
+                font-size: 50px;
+            }
+
+            .view-class{
+                width: 50vw;
+            }
+
+            .em-class{
+                font-size: 1em;
+            }
+
+            .rem-class{
+                font-size: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box pixel-class">100px</div>
+        <div class="box percent-class">50%</div>
+        <div class="box view-class">50vw</div>
+        <p class="em-class">1em</p>
+        <p class="rem-class">1rem</p>
+
+    
+
+        <div class="parent">
+            <div class="box pixel-class">100px</div>
+            <div class="box percent-class">50%</div>
+            <div class="box view-class">50vw</div>
+
+            <p class="em-class">1em</p>
+            <p class="rem-class">1rem</p>
+        </div>
+    </body>
+</html>
+
+
+
+

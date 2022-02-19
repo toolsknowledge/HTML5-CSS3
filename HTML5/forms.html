@@ -31,7 +31,7 @@
     </head>
 
     <body>
-        <form>
+        <form action="/" method="POST">
             <table align="center"
                    cellspacing="10px"
                    cellpadding="10px">
@@ -143,6 +143,28 @@
                     <td colspan="3">
                         <input type="color" name="color">
                     </td>
+                </tr>
+
+                <tr>
+                    <td>Salary</td>
+                    <td colspan="3">
+                        <input type="range" min="10000" max="100000" step="10000" name="salary" value="10000">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Upload Image</td>
+                    <td colspan="3">
+                        <input type="file" name="image">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                    <td><input type="button" value="cancel"></td>
                 </tr>
 
 
