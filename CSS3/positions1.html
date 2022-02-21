@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .common{
+                font-size: 30px;
+                color: white;
+            }
+
+            .first{
+                background-color: red;
+            }
+
+            .second{
+                background-color: green;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            .third{
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="common first">First</div>
+
+        <div class="common second">Second</div>
+
+        <div class="common third">Third</div>
+    </body>
+</html> -->
+
+
+
+<!--
+    second --- absolute
+
+    First
+
+    Third  ---   on Top of Third second
+
+    ---------------------------------------------
+
+    First --- absolute
+
+
+    Third <--- First <--- Second
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .common{
+                font-size: 30px;
+                color: white;
+            }
+
+            .first{
+                background-color: red;
+                position: absolute;
+                z-index: 3;
+            }
+
+            .second{
+                background-color: green;
+                position: absolute;
+                z-index: 2;
+                
+            }
+
+            .third{
+                background-color: blue;
+                position: absolute;
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="common first">First</div>
+
+        <div class="common second">Second</div>
+
+        <div class="common third">Third</div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
