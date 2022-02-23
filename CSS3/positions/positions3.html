@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .common{
+                font-size: 50px;
+                color: white;
+            }
+
+            .one{
+                background-color: red;
+                position: absolute;
+                top: 10px;
+                left: 2px;
+            }
+
+            .two{
+                background-color: green;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            .third{
+                background-color: yellow;
+                position: absolute;
+                top: 40px;
+                left: 40px;
+            }
+            .top{
+                background-color: aqua;
+            }
+
+            .parent{
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="my_class">
+            <div class="common top">Top</div>
+        </div>
+
+        <div class="parent">
+            <div class="common one">1</div>
+            <div class="common two">2</div>
+            <div class="common third">3</div>
+        </div>
+    </body>
+</html>
