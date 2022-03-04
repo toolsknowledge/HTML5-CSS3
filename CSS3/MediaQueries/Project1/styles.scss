@@ -1,0 +1,60 @@
+$color-1  : #ff0000;
+$color-2  : green;
+$color-3  : blue;
+$color-4  : yellow;
+
+$mobile : 576px;
+$ipad : 768px;
+$laptop:992px;
+$desktop:1200px;
+
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#size{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media (max-width:$desktop){
+    .container{
+        background-color: $color-1;
+    }
+}
+
+
+@media (max-width:$laptop){
+    .container{
+        background-color: $color-2;
+    }
+}
+
+
+@media (max-width:$ipad){
+    .container{
+        background-color: $color-3;
+    }
+}
+
+
+@media (max-width:$mobile){
+    .container{
+        background-color: $color-4;
+    }
+}
+
+
+
+
+
+
+

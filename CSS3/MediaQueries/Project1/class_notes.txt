@@ -1,0 +1,13 @@
+Execution of "webpage" into "multiple" devices called as "media queries"
+
+SCSS is the Preprocessor of "CSS"
+
+SCSS Supports the "variables"
+
+in SCSS Code Reusability is "high" compared to "CSS" and "CSS3"
+
+Browsers Can't understand the "SCSS"
+
+so, we need to convert SCSS to Equalent CSS
+
+Sass Compiler, used to convert the SCSS to Equalent CSS
