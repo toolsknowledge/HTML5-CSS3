@@ -61,5 +61,72 @@
 
 .footer{
     height: 10vh;
-    border: 1px solid yellowgreen;
+    
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15%;  
+    
+    [class^="footer-"]{
+        font-size: 2vw;
+    }
 }
+
+
+
+@media (max-width:650px){
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__logo{
+            
+        }
+        &__menu{
+            display: none;
+        }
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__image{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-size: contain;
+        }
+
+        &__text{
+            &-4{
+                display: none;
+            }
+        }
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        [class^="footer-"]{
+            font-size: 4vw;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
