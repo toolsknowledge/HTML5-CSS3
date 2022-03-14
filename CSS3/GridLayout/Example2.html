@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Examples</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                display: grid;
+                grid-template-areas: "R-1"
+                                     "R-2"
+                                     "R-3";
+                height: 100vh;
+            }
+            header{
+                grid-area: "R-1";
+                height: 10vh;
+                background-color: green;
+            }
+            main{
+                grid-area: "R-2";
+                height: 80vh;
+                background-color: brown;
+            }
+            footer{
+                grid-area: "R-3";
+                height: 10vh;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>Header Soon...!</header>
+            <main>Content Soon...!</main>
+            <footer>Footer Soon...!</footer>
+        </div>
+    </body>
+</html>

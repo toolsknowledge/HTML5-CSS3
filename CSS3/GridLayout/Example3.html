@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example3</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                display: grid;
+                grid-template-areas: "A A A A A A A A A A A A"
+                                     "S S M M M M M M M M S S"
+                                     "F F F F F F F F F F F F "; 
+                height: 100vh;  
+            }
+            header{
+                grid-area: "A";
+                height: 10vh;
+                background-color: green;
+            }
+            aside{
+                grid-area: "S";
+                background-color: brown;
+            }
+            main{
+                grid-area: "M";
+                background-color: blue;
+                height: 80vh;
+            }
+            footer{
+                grid-area: "F";
+                height: 10vh;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>Header</header>
+            <aside>Menu</aside>
+            <main>Main Soon</main>
+            <footer>Footer Soon</footer>
+        </div>
+    </body>
+</html>

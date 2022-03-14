@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Layout</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                /* grid-template-rows: repeat(3,150px); */
+                /* grid-row-gap: 10px;
+                grid-column-gap: 10px; */
+                grid-auto-rows: minmax(50px,auto);
+                grid-gap: 10px;
+            }
+            .box{
+                color: white;
+                padding: 10px;
+                text-align: center;
+            }
+            .box-1{
+                background-color: red;
+            }
+            .box-2{
+                background-color: green;
+            }
+            .box-3{
+                background-color: yellowgreen;
+            }
+            .box-4{
+                background-color: aqua;
+            }
+            .box-5{
+                background-color: brown;
+            }
+            .box-6{
+                background-color: burlywood;
+            }
+            .box-7{
+                background-color: bisque;
+            }
+            .box-8{
+                background-color: chocolate;
+            }
+            .box-9{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat reiciendis perspiciatis quibusdam quae odio ipsam repudiandae, quos natus consequuntur provident deleniti facere sequi earum accusamus soluta molestiae explicabo. Atque eos harum unde ex optio non consectetur alias facere temporibus omnis consequatur, neque dolor deserunt odit cumque magnam! Quam, impedit itaque.</div>
+            <div class="box box-2">Box2</div>
+            <div class="box box-3">Box3</div>
+            <div class="box box-4">Box4</div>
+            <div class="box box-5">Box5</div>
+            <div class="box box-6">Box6</div>
+            <div class="box box-7">Box7</div>
+            <div class="box box-8">Box8</div>
+            <div class="box box-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus voluptas alias vitae explicabo quod sapiente molestiae eveniet inventore officia tempore debitis repellendus, pariatur nam quaerat ipsa aliquid laboriosam. Consequuntur?</div>
+        </div>
+    </body>
+</html>
